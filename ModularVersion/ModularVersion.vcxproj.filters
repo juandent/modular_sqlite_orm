@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="headers">
+      <UniqueIdentifier>{7209940c-9c23-4b90-934c-b6f5ed54d5c9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="start_macros.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="cxx_universal.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="cxx_type_traits_polyfill.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="type_traits.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="cxx_core_features.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="cxx_compiler_quirks.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="error_code.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="type_printer.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="cxx_optional.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="constraints.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="mpl.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="tuple_traits.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="tuple_filter.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="index_sequence_util.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="type_is_nullable.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="cxx_string_view.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="serialize_result_type.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="operators.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="member_traits.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="finish_macros.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cxx_type_traits_polyfill.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="type_traits.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="error_code.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="is_std_ptr.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="field_printer.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="collate_argument.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="constraints.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mpl.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="same_or_void.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tuple_traits.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tuple_filter.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="index_sequence_util.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="table_type_of.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="type_printer.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="type_is_nullable.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="operators.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tags.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="serialize_result_type.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="column.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="member_traits.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="conditions.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="is_base_of_template.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="optional_container.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="serializer_context.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="alias_traits.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="expression.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="literal.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="column_pointer.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="alias.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="core_functions.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="into.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="select_constraints.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="where.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="group_by.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="table_info.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="triggers.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="statement_finalizer.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="arithmetic_tag.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pointer_value.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xdestroy_handling.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="statement_binder.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cxx_functional_polyfill.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="row_extractor.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="journal_mode.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sync_schema_result.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="index.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="indexed_column.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rowid.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="table.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="static_magic.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tuple_iteration.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="typed_comparator.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="storage_impl.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="storage_lookup.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="default_value_extractor.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="storage.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="row_extractor_builder.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mapped_row_extractor.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="object_from_column_builder.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="column_result.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tuple_fy.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mapped_type_proxy.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="storage_traits.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tuple_transformer.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="view.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="iterator.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ast_iterator.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prepared_statement.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="connection_holder.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="values.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="upsert_clause.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="set.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="table_name_collector.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="storage_base.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pragma.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="serializing_util.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="limit_accessor.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transaction_guard.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="backup.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="function.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="values_to_tuple.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="arg_values.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="expression_object_type.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="statement_serializer.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="excluded.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="column_names_getter.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="order_by_serializer.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="exists.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="get_prepared_statement.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="node_tuple.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="carray.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlite_schema_table.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbstat.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="interface_definitions.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="column_definitions.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="table_definitions.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="storage_definitions.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlite_orm.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UseExample.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
