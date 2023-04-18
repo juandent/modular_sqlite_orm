@@ -41,7 +41,7 @@ int main()
      sync_schema_result res;
      Persona pers{};
      storage.insert<Persona>(pers);
-     //auto r = storage.sync_schema();
+     auto r = storage.sync_schema();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
