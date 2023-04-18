@@ -31,10 +31,10 @@
 *.out
 *.app
 
-build\
-.vscode\
-x64\
+build/
+.vscode/
+x64/
 
-ModularVersion\x64\
-UseModularVersion\x64\
+ModularVersion/x64/
+UseModularVersion/x64/
 
