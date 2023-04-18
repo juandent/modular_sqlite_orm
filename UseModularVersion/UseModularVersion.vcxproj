@@ -136,6 +136,9 @@
     <ProjectReference Include="..\ModularVersion\ModularVersion.vcxproj">
       <Project>{586b78ea-b92d-488c-b130-86927cf7c2b5}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\sqlite3\sqlite3.vcxproj">
+      <Project>{b70361f2-ed81-40bf-aac6-da92517a3011}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

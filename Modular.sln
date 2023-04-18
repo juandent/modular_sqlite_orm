@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ModularVersion", "ModularVe
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UseModularVersion", "UseModularVersion\UseModularVersion.vcxproj", "{5B14BC4E-5C8E-43F7-AE97-3F7890CD91F2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sqlite3", "sqlite3\sqlite3.vcxproj", "{B70361F2-ED81-40BF-AAC6-DA92517A3011}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,18 @@ Global
 		{5B14BC4E-5C8E-43F7-AE97-3F7890CD91F2}.Release|x64.Build.0 = Release|x64
 		{5B14BC4E-5C8E-43F7-AE97-3F7890CD91F2}.Release|x86.ActiveCfg = Release|Win32
 		{5B14BC4E-5C8E-43F7-AE97-3F7890CD91F2}.Release|x86.Build.0 = Release|Win32
+		{B70361F2-ED81-40BF-AAC6-DA92517A3011}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{B70361F2-ED81-40BF-AAC6-DA92517A3011}.Debug|Any CPU.Build.0 = Debug|x64
+		{B70361F2-ED81-40BF-AAC6-DA92517A3011}.Debug|x64.ActiveCfg = Debug|x64
+		{B70361F2-ED81-40BF-AAC6-DA92517A3011}.Debug|x64.Build.0 = Debug|x64
+		{B70361F2-ED81-40BF-AAC6-DA92517A3011}.Debug|x86.ActiveCfg = Debug|Win32
+		{B70361F2-ED81-40BF-AAC6-DA92517A3011}.Debug|x86.Build.0 = Debug|Win32
+		{B70361F2-ED81-40BF-AAC6-DA92517A3011}.Release|Any CPU.ActiveCfg = Release|x64
+		{B70361F2-ED81-40BF-AAC6-DA92517A3011}.Release|Any CPU.Build.0 = Release|x64
+		{B70361F2-ED81-40BF-AAC6-DA92517A3011}.Release|x64.ActiveCfg = Release|x64
+		{B70361F2-ED81-40BF-AAC6-DA92517A3011}.Release|x64.Build.0 = Release|x64
+		{B70361F2-ED81-40BF-AAC6-DA92517A3011}.Release|x86.ActiveCfg = Release|Win32
+		{B70361F2-ED81-40BF-AAC6-DA92517A3011}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
