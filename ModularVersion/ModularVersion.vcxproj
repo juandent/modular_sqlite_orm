@@ -122,7 +122,7 @@
     </Link>
     <Lib>
       <AdditionalDependencies>sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>Q:\Components\vcpkg\installed\x64-windows\lib\</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>Q:\C++\ModularSqliteOrm\Dependencies</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -147,7 +147,7 @@
     </Link>
     <Lib>
       <AdditionalDependencies>sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>Q:\Components\vcpkg\installed\x64-windows\lib\</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>Q:\C++\ModularSqliteOrm\Dependencies</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
