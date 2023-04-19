@@ -31,12 +31,14 @@ import table;
 import sync_schema_result;
 import storage;
 import table_info;
+import column;
 
 
 export
 {
     namespace sqlite_orm {
         namespace internal {
+
 
             template<class... DBO>
             template<class Table, satisfies<is_table, Table>>

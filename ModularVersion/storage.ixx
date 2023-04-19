@@ -101,6 +101,8 @@ import storage_lookup;
 import prepared_statement;
 import alias_traits;
 import set;
+import sqlite_schema_table;
+//import storage_definitions;
 
 export
 {
@@ -1507,6 +1509,9 @@ export
                 }
 #endif  // SQLITE_ORM_OPTIONAL_SUPPORTED
             };  // struct storage_t
+
+
+
         }
 
         /*
