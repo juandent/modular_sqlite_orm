@@ -14,7 +14,8 @@ module;
 // #include "type_is_nullable.h"
 // #include "constraints.h"
 
-
+// JUAN remove this later!!
+#undef SQLITE_ORM_AGGREGATE_BASES_SUPPORTED
 
 export module column;
 import cxx_type_traits_polyfill;

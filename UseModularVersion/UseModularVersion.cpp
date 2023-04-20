@@ -44,6 +44,9 @@ int main()
      Persona pers{};
      storage.insert<Persona>(pers);
      auto r = storage.sync_schema();
+     using namespace sqlite_orm::internal;
+     column_t col{ "age", & Persona::age, empty_setter{}, std::tuple<>{} };
+     // unique_t un{col};
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
