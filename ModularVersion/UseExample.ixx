@@ -1,14 +1,10 @@
 module;
 
 #include <string>
-#include <dummy.h>
 #include <sqlite3.h>
 
 
 
-#ifndef WHATS_APP
-#error Not included
-#endif
 
 export module UseExample;
 // export import storage;

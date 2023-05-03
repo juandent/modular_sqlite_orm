@@ -38,4 +38,5 @@ x64/
 
 ModularVersion/x64/
 UseModularVersion/x64/
-
+gppModules/
+Dependencies/

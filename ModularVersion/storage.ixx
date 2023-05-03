@@ -1508,6 +1508,7 @@ export
                     return res;
                 }
 #endif  // SQLITE_ORM_OPTIONAL_SUPPORTED
+
             };  // struct storage_t
 
 

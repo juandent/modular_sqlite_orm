@@ -11,6 +11,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sqlite3", "sqlite3\sqlite3.
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug Clang|Any CPU = Debug Clang|Any CPU
+		Debug Clang|x64 = Debug Clang|x64
+		Debug Clang|x86 = Debug Clang|x86
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
@@ -19,6 +22,12 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{586B78EA-B92D-488C-B130-86927CF7C2B5}.Debug Clang|Any CPU.ActiveCfg = Debug Clang|x64
+		{586B78EA-B92D-488C-B130-86927CF7C2B5}.Debug Clang|Any CPU.Build.0 = Debug Clang|x64
+		{586B78EA-B92D-488C-B130-86927CF7C2B5}.Debug Clang|x64.ActiveCfg = Debug Clang|x64
+		{586B78EA-B92D-488C-B130-86927CF7C2B5}.Debug Clang|x64.Build.0 = Debug Clang|x64
+		{586B78EA-B92D-488C-B130-86927CF7C2B5}.Debug Clang|x86.ActiveCfg = Debug Clang|Win32
+		{586B78EA-B92D-488C-B130-86927CF7C2B5}.Debug Clang|x86.Build.0 = Debug Clang|Win32
 		{586B78EA-B92D-488C-B130-86927CF7C2B5}.Debug|Any CPU.ActiveCfg = Debug|x64
 		{586B78EA-B92D-488C-B130-86927CF7C2B5}.Debug|Any CPU.Build.0 = Debug|x64
 		{586B78EA-B92D-488C-B130-86927CF7C2B5}.Debug|x64.ActiveCfg = Debug|x64
@@ -31,6 +40,12 @@ Global
 		{586B78EA-B92D-488C-B130-86927CF7C2B5}.Release|x64.Build.0 = Release|x64
 		{586B78EA-B92D-488C-B130-86927CF7C2B5}.Release|x86.ActiveCfg = Release|Win32
 		{586B78EA-B92D-488C-B130-86927CF7C2B5}.Release|x86.Build.0 = Release|Win32
+		{5B14BC4E-5C8E-43F7-AE97-3F7890CD91F2}.Debug Clang|Any CPU.ActiveCfg = Debug Clang|x64
+		{5B14BC4E-5C8E-43F7-AE97-3F7890CD91F2}.Debug Clang|Any CPU.Build.0 = Debug Clang|x64
+		{5B14BC4E-5C8E-43F7-AE97-3F7890CD91F2}.Debug Clang|x64.ActiveCfg = Debug Clang|x64
+		{5B14BC4E-5C8E-43F7-AE97-3F7890CD91F2}.Debug Clang|x64.Build.0 = Debug Clang|x64
+		{5B14BC4E-5C8E-43F7-AE97-3F7890CD91F2}.Debug Clang|x86.ActiveCfg = Debug Clang|Win32
+		{5B14BC4E-5C8E-43F7-AE97-3F7890CD91F2}.Debug Clang|x86.Build.0 = Debug Clang|Win32
 		{5B14BC4E-5C8E-43F7-AE97-3F7890CD91F2}.Debug|Any CPU.ActiveCfg = Debug|x64
 		{5B14BC4E-5C8E-43F7-AE97-3F7890CD91F2}.Debug|Any CPU.Build.0 = Debug|x64
 		{5B14BC4E-5C8E-43F7-AE97-3F7890CD91F2}.Debug|x64.ActiveCfg = Debug|x64
@@ -43,6 +58,12 @@ Global
 		{5B14BC4E-5C8E-43F7-AE97-3F7890CD91F2}.Release|x64.Build.0 = Release|x64
 		{5B14BC4E-5C8E-43F7-AE97-3F7890CD91F2}.Release|x86.ActiveCfg = Release|Win32
 		{5B14BC4E-5C8E-43F7-AE97-3F7890CD91F2}.Release|x86.Build.0 = Release|Win32
+		{B70361F2-ED81-40BF-AAC6-DA92517A3011}.Debug Clang|Any CPU.ActiveCfg = Debug Clang|x64
+		{B70361F2-ED81-40BF-AAC6-DA92517A3011}.Debug Clang|Any CPU.Build.0 = Debug Clang|x64
+		{B70361F2-ED81-40BF-AAC6-DA92517A3011}.Debug Clang|x64.ActiveCfg = Debug Clang|x64
+		{B70361F2-ED81-40BF-AAC6-DA92517A3011}.Debug Clang|x64.Build.0 = Debug Clang|x64
+		{B70361F2-ED81-40BF-AAC6-DA92517A3011}.Debug Clang|x86.ActiveCfg = Debug Clang|Win32
+		{B70361F2-ED81-40BF-AAC6-DA92517A3011}.Debug Clang|x86.Build.0 = Debug Clang|Win32
 		{B70361F2-ED81-40BF-AAC6-DA92517A3011}.Debug|Any CPU.ActiveCfg = Debug|x64
 		{B70361F2-ED81-40BF-AAC6-DA92517A3011}.Debug|Any CPU.Build.0 = Debug|x64
 		{B70361F2-ED81-40BF-AAC6-DA92517A3011}.Debug|x64.ActiveCfg = Debug|x64
