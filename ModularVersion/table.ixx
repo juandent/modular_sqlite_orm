@@ -298,9 +298,6 @@ export
                     this->for_each_column_excluding<OpTraitFnCls::template fn>(lambda);
                 }
 
-                //std::vector<table_xinfo> get_table_info() const;
-                // JDH commented above, inserted below
-
                 std::vector<table_xinfo> get_table_info() const {
                     std::vector<table_xinfo> res;
                     res.reserve(filter_tuple_sequence_t<elements_type, is_column>::size());

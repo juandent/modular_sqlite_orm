@@ -110,8 +110,6 @@ export
                  *  Simplified interface for `DEFAULT` constraint
                  *  @return string representation of default value if it exists otherwise nullptr
                  */
-                //std::unique_ptr<std::string> default_value() const;
-                // JDH commented above inserted below
                 std::unique_ptr<std::string> default_value() const {
                     using default_op_index_sequence =
                         filter_tuple_sequence_t<constraints_type, check_if_is_template<default_t>::template fn>;
