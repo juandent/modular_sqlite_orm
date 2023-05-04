@@ -39,11 +39,12 @@ int main()
     //MyFunc();
     //Vector<int> v {new int};
     auto storage = make_storage("pruebamodular.sqlite", make_table("Personas", make_column("name", &Persona::name), make_column("age", &Persona::age)));
+    auto r = storage.sync_schema();
      auto vec = storage.get_all<Persona>();
      sync_schema_result res;
      Persona pers{};
      storage.insert<Persona>(pers);
-     auto r = storage.sync_schema();
+
      using namespace sqlite_orm::internal;
      column_t col{ "age", & Persona::age, empty_setter{}, std::tuple<>{} };
      // unique_t un{col};

@@ -26,6 +26,7 @@ import member_traits;
 import type_is_nullable;
 import constraints;
 import mpl;
+import static_magic;
 
 export
 {
@@ -109,7 +110,24 @@ export
                  *  Simplified interface for `DEFAULT` constraint
                  *  @return string representation of default value if it exists otherwise nullptr
                  */
-                std::unique_ptr<std::string> default_value() const;
+                //std::unique_ptr<std::string> default_value() const;
+                // JDH commented above inserted below
+                std::unique_ptr<std::string> default_value() const {
+                    using default_op_index_sequence =
+                        filter_tuple_sequence_t<constraints_type, check_if_is_template<default_t>::template fn>;
+
+                    std::unique_ptr<std::string> value;
+                    call_if_constexpr<default_op_index_sequence::size()>(
+                        [&value](auto& constraints, auto op_index_sequence) {
+                            using default_op_index_sequence = decltype(op_index_sequence);
+                            constexpr size_t opIndex = first_index_sequence_value(default_op_index_sequence{});
+                            value = std::make_unique<std::string>(serialize_default_value(get<opIndex>(constraints)));
+                        },
+                        this->constraints,
+                        default_op_index_sequence{});
+                    return value;
+                }
+
             };
 
             /**

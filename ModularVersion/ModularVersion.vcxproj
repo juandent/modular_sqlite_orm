@@ -251,7 +251,11 @@
     <ClCompile Include="carray.ixx" />
     <ClCompile Include="collate_argument.ixx" />
     <ClCompile Include="column.ixx" />
-    <ClCompile Include="column_definitions.ixx" />
+    <ClCompile Include="column_definitions.ixx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="column_names_getter.ixx" />
     <ClCompile Include="column_pointer.ixx" />
     <ClCompile Include="column_result.ixx" />
@@ -317,13 +321,21 @@
     <ClCompile Include="static_magic.ixx" />
     <ClCompile Include="storage.ixx" />
     <ClCompile Include="storage_base.ixx" />
-    <ClCompile Include="storage_definitions.ixx" />
+    <ClCompile Include="storage_definitions.ixx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="storage_impl.ixx" />
     <ClCompile Include="storage_lookup.ixx" />
     <ClCompile Include="storage_traits.ixx" />
     <ClCompile Include="sync_schema_result.ixx" />
     <ClCompile Include="table.ixx" />
-    <ClCompile Include="table_definitions.ixx" />
+    <ClCompile Include="table_definitions.ixx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="table_info.ixx" />
     <ClCompile Include="table_name_collector.ixx" />
     <ClCompile Include="table_type_of.ixx" />
