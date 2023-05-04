@@ -371,18 +371,6 @@
     <ClCompile Include="dbstat.ixx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="interface_definitions.ixx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="column_definitions.ixx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="table_definitions.ixx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="storage_definitions.ixx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="sqlite_orm.ixx">
       <Filter>Source Files</Filter>
     </ClCompile>
