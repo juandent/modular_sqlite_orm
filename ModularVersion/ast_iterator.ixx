@@ -44,6 +44,7 @@ import cxx_functional_polyfill;
 import cxx_type_traits_polyfill;
 import alias_traits;
 import literal;
+import column_pointer;
 
 export
 {

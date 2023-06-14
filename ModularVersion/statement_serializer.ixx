@@ -10,6 +10,7 @@ module;
 #endif  //  SQLITE_ORM_OMITS_CODECVT
 #include <memory>
 #include <array>
+#include <set>
 #include "cxx_string_view.h"
 #include "cxx_optional.h"
 
@@ -90,6 +91,7 @@ import expression_object_type;
 import mapped_type_proxy;
 import tuple_traits;
 import where;
+import member_traits;
 
 export
 {

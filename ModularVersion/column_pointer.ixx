@@ -80,18 +80,18 @@ export
                 }
             };
 #endif
-#if 1   // JDH moved from conditions module to deal with cyclic dependencies
-            template<class F, class O>
-            internal::using_t<O, F O::*> using_(F O::* p) {
-                return { p };
-            }
-            template<class T, class M>
-            internal::using_t<T, M> using_(internal::column_pointer<T, M> cp) {
-                return { std::move(cp) };
-            }
-#endif
 
         }
+#if 1   // JDH moved from conditions module to deal with cyclic dependencies
+        template<class F, class O>
+        internal::using_t<O, F O::*> using_(F O::* p) {
+            return { p };
+        }
+        template<class T, class M>
+        internal::using_t<T, M> using_(internal::column_pointer<T, M> cp) {
+            return { std::move(cp) };
+        }
+#endif
 
     }
 }

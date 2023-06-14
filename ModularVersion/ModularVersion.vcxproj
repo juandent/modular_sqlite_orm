@@ -178,6 +178,7 @@
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\ModularVersion</AdditionalIncludeDirectories>
       <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+      <ShowIncludes>true</ShowIncludes>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -242,107 +243,491 @@
     <ClInclude Include="type_traits.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="alias.ixx" />
-    <ClCompile Include="alias_traits.ixx" />
-    <ClCompile Include="arg_values.ixx" />
-    <ClCompile Include="arithmetic_tag.ixx" />
-    <ClCompile Include="ast_iterator.ixx" />
-    <ClCompile Include="backup.ixx" />
-    <ClCompile Include="carray.ixx" />
-    <ClCompile Include="collate_argument.ixx" />
-    <ClCompile Include="column.ixx" />
-    <ClCompile Include="column_names_getter.ixx" />
-    <ClCompile Include="column_pointer.ixx" />
-    <ClCompile Include="column_result.ixx" />
-    <ClCompile Include="conditions.ixx" />
-    <ClCompile Include="connection_holder.ixx" />
-    <ClCompile Include="constraints.ixx" />
-    <ClCompile Include="core_functions.ixx" />
-    <ClCompile Include="cxx_functional_polyfill.ixx" />
-    <ClCompile Include="cxx_type_traits_polyfill.ixx" />
-    <ClCompile Include="dbstat.ixx" />
-    <ClCompile Include="default_value_extractor.ixx" />
-    <ClCompile Include="error_code.ixx" />
-    <ClCompile Include="excluded.ixx" />
-    <ClCompile Include="exists.ixx" />
-    <ClCompile Include="expression.ixx" />
-    <ClCompile Include="expression_object_type.ixx" />
-    <ClCompile Include="field_printer.ixx" />
-    <ClCompile Include="function.ixx" />
-    <ClCompile Include="get_prepared_statement.ixx" />
-    <ClCompile Include="group_by.ixx" />
-    <ClCompile Include="index.ixx" />
-    <ClCompile Include="indexed_column.ixx" />
-    <ClCompile Include="index_sequence_util.ixx" />
-    <ClCompile Include="into.ixx" />
-    <ClCompile Include="is_base_of_template.ixx" />
-    <ClCompile Include="is_std_ptr.ixx" />
-    <ClCompile Include="iterator.ixx" />
-    <ClCompile Include="journal_mode.ixx" />
-    <ClCompile Include="limit_accessor.ixx" />
-    <ClCompile Include="literal.ixx" />
-    <ClCompile Include="mapped_row_extractor.ixx" />
-    <ClCompile Include="mapped_type_proxy.ixx" />
-    <ClCompile Include="member_traits.ixx" />
-    <ClCompile Include="mpl.ixx" />
-    <ClCompile Include="node_tuple.ixx" />
-    <ClCompile Include="object_from_column_builder.ixx" />
-    <ClCompile Include="operators.ixx" />
-    <ClCompile Include="optional_container.ixx" />
-    <ClCompile Include="order_by_serializer.ixx" />
-    <ClCompile Include="pointer_value.ixx" />
-    <ClCompile Include="pragma.ixx" />
-    <ClCompile Include="prepared_statement.ixx" />
-    <ClCompile Include="rowid.ixx" />
-    <ClCompile Include="row_extractor.ixx" />
-    <ClCompile Include="row_extractor_builder.ixx" />
-    <ClCompile Include="same_or_void.ixx" />
-    <ClCompile Include="select_constraints.ixx" />
-    <ClCompile Include="serializer_context.ixx" />
-    <ClCompile Include="serialize_result_type.ixx" />
-    <ClCompile Include="serializing_util.ixx" />
-    <ClCompile Include="set.ixx" />
+    <ClCompile Include="alias.h">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="alias_traits.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="arg_values.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="arithmetic_tag.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="ast_iterator.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="backup.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="carray.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="collate_argument.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="column.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="column_names_getter.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="column_pointer.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="column_result.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="conditions.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="connection_holder.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="constraints.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="core_functions.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="cxx_functional_polyfill.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="cxx_type_traits_polyfill.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="dbstat.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="default_value_extractor.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="error_code.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="excluded.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="exists.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="expression.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="expression_object_type.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="field_printer.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="function.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="get_prepared_statement.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="group_by.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="index.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="indexed_column.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="index_sequence_util.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="into.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="is_base_of_template.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="is_std_ptr.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="iterator.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="journal_mode.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="limit_accessor.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="literal.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="mapped_row_extractor.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="mapped_type_proxy.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="member_traits.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="mpl.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="node_tuple.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="object_from_column_builder.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="operators.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="optional_container.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="order_by_serializer.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="pointer_value.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="pragma.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="prepared_statement.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="rowid.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="row_extractor.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="row_extractor_builder.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="same_or_void.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="select_constraints.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="serializer_context.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="serialize_result_type.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="serializing_util.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="set.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
     <ClCompile Include="Source.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="sqlite_orm.ixx" />
-    <ClCompile Include="sqlite_schema_table.ixx" />
-    <ClCompile Include="statement_binder.ixx" />
-    <ClCompile Include="statement_finalizer.ixx" />
-    <ClCompile Include="statement_serializer.ixx" />
-    <ClCompile Include="static_magic.ixx" />
-    <ClCompile Include="storage.ixx" />
-    <ClCompile Include="storage_base.ixx" />
-    <ClCompile Include="storage_impl.ixx" />
-    <ClCompile Include="storage_lookup.ixx" />
-    <ClCompile Include="storage_traits.ixx" />
-    <ClCompile Include="sync_schema_result.ixx" />
-    <ClCompile Include="table.ixx" />
-    <ClCompile Include="table_info.ixx" />
-    <ClCompile Include="table_name_collector.ixx" />
-    <ClCompile Include="table_type_of.ixx" />
-    <ClCompile Include="tags.ixx" />
-    <ClCompile Include="transaction_guard.ixx" />
-    <ClCompile Include="triggers.ixx" />
-    <ClCompile Include="tuple_filter.ixx" />
-    <ClCompile Include="tuple_fy.ixx" />
-    <ClCompile Include="tuple_iteration.ixx" />
-    <ClCompile Include="tuple_traits.ixx" />
-    <ClCompile Include="tuple_transformer.ixx" />
-    <ClCompile Include="typed_comparator.ixx" />
-    <ClCompile Include="type_is_nullable.ixx" />
-    <ClCompile Include="type_printer.ixx" />
-    <ClCompile Include="type_traits.ixx" />
-    <ClCompile Include="upsert_clause.ixx" />
-    <ClCompile Include="UseExample.ixx" />
-    <ClCompile Include="util.ixx" />
-    <ClCompile Include="values.ixx" />
-    <ClCompile Include="values_to_tuple.ixx" />
-    <ClCompile Include="view.ixx" />
-    <ClCompile Include="where.ixx" />
-    <ClCompile Include="xdestroy_handling.ixx" />
+    <ClCompile Include="sqlite_orm.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="sqlite_schema_table.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="statement_binder.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="statement_finalizer.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="statement_serializer.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="static_magic.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="storage.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="storage_base.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="storage_impl.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="storage_lookup.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="storage_traits.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="sync_schema_result.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="table.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="table_info.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="table_name_collector.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="table_type_of.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="tags.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="transaction_guard.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="triggers.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="tuple_filter.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="tuple_fy.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="tuple_iteration.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="tuple_traits.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="tuple_transformer.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="typed_comparator.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="type_is_nullable.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="type_printer.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="type_traits.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="upsert_clause.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="UseExample.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="util.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="values.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="values_to_tuple.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="view.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="where.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
+    <ClCompile Include="xdestroy_handling.ixx">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsCppModule</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Clang|x64'">CompileAsCppModule</CompileAs>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\sqlite3\sqlite3.vcxproj">

@@ -173,7 +173,7 @@
     <ClCompile Include="column_pointer.ixx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="alias.ixx">
+    <ClCompile Include="alias.h">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="core_functions.ixx">
